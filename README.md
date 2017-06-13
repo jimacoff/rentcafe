@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## angular2-seed
 
 A simple starter project demonstrating the basic concepts of Angular 2.
@@ -12,3 +13,7 @@ A simple starter project demonstrating the basic concepts of Angular 2.
 - run `npm start` to fire up dev server
 - open browser to [`http://localhost:3000`](http://localhost:3000)
 - if you want to use other port, open `package.json` file, then change port in `--port 3000` script
+=======
+# rentcafe
+Angular version of Rent Cafe Resident Portal
+>>>>>>> 725f72c8f0d7e02c18c7f77b5ed120d123229d6b
