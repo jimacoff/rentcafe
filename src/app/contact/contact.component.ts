@@ -20,5 +20,6 @@ export class ContactComponent implements OnInit {
   }
   submitForm(): void {
     console.log(this.contactForm);
+    this.contactForm.reset();
   }
 }

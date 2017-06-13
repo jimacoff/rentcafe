@@ -14,8 +14,11 @@ import { RepoListComponent } from './github/repo-list/repo-list.component';
 import { RepoDetailComponent } from './github/repo-detail/repo-detail.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
+import { MaintenanceItemComponent } from './maintenance/maintenance-item.component';
+import { MaintenanceItemListComponent } from './maintenance/maintenance-item-list.component';
 
 @NgModule({
+  //used to make components, directives, and pipes available to your module that don't come from another module
   declarations: [
     AppComponent,
     AboutComponent,
@@ -23,8 +26,11 @@ import { ContactComponent } from './contact/contact.component';
     RepoListComponent,
     RepoDetailComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    MaintenanceItemComponent,
+    MaintenanceItemListComponent
   ],
+  //used to bring in other angular modules
   imports: [
     BrowserModule,
     FormsModule,
@@ -35,6 +41,7 @@ import { ContactComponent } from './contact/contact.component';
   providers: [
     GithubService
   ],
+  //used for root module, and let's angular know the entry point for the app code
   bootstrap: [ AppComponent ]
 })
 export class AppModule {
