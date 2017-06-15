@@ -1,0 +1,14 @@
+app-maintenance-item-list {
+    clear: both;
+}
+
+.delete {
+    background-color: blue;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    cursor: pointer;
+}

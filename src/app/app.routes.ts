@@ -8,6 +8,7 @@ import { RepoDetailComponent } from './github/repo-detail/repo-detail.component'
 import { ContactComponent } from './contact/contact.component';
 import { MaintenanceItemComponent } from './maintenance/maintenance-item.component';
 import { MaintenanceItemListComponent } from './maintenance/maintenance-item-list.component';
+import { MaintenanceItemFormComponent } from './maintenance/maintenance-item-form.component';
 
 export const rootRouterConfig: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -24,6 +25,7 @@ export const rootRouterConfig: Routes = [
       }]
   },
   { path: 'contact', component: ContactComponent },
-  { path: 'maintenance', component: MaintenanceItemListComponent }
+  { path: 'maintenance', component: MaintenanceItemListComponent },
+  { path: 'maintenance/add', component: MaintenanceItemFormComponent }
 ];
 

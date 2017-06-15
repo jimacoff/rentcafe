@@ -1,0 +1,27 @@
+<form 
+    [formGroup]="form"
+    (ngSubmit)="onSubmit(form.value)">
+    <ul>
+        <li>
+            <label for="title">Title</label>
+            <input type="text" nanme="title" formControlName="title">
+        </li>
+        <li>
+            <label for="room">Room</label>
+            <select name="room" id="room" formControlName="room">
+                <option value="bedroom">bedroom</option>
+                <option value="kitchen">kitchen</option>
+                <option value="bathrooom">bathroom</option>
+                <option value="hallway">hallway</option>
+                <option value="living_room">living room</option>
+                <option value="dining_room">dining room</option>
+            </select>
+        </li>
+        <li>
+            <label for="entry_ok">Entry ok?</label>
+            <input type="radio" name="entry_ok" value="yes" formControlName="entry_ok">Yes
+            <input type="radio" name="entry_ok" value="no" formControlName="entry_ok"> No<br>
+        </li>   
+    </ul>
+    <button type="submit" [disabled]="!form.valid">Save</button>
+</form>

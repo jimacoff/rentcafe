@@ -16,6 +16,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 import { MaintenanceItemComponent } from './maintenance/maintenance-item.component';
 import { MaintenanceItemListComponent } from './maintenance/maintenance-item-list.component';
+import { MaintenanceItemFormComponent } from './maintenance/maintenance-item-form.component';
+import { MaintenanceItemService } from './maintenance/maintenance-item.service';
 
 @NgModule({
   //used to make components, directives, and pipes available to your module that don't come from another module
@@ -28,7 +30,8 @@ import { MaintenanceItemListComponent } from './maintenance/maintenance-item-lis
     HomeComponent,
     ContactComponent,
     MaintenanceItemComponent,
-    MaintenanceItemListComponent
+    MaintenanceItemListComponent,
+    MaintenanceItemFormComponent
   ],
   //used to bring in other angular modules
   imports: [
@@ -38,8 +41,10 @@ import { MaintenanceItemListComponent } from './maintenance/maintenance-item-lis
     HttpModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: true })
   ],
+  //make services available
   providers: [
-    GithubService
+    GithubService,
+    MaintenanceItemService
   ],
   //used for root module, and let's angular know the entry point for the app code
   bootstrap: [ AppComponent ]
